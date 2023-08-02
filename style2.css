@@ -1,0 +1,48 @@
+/* styles.css */
+
+.flash-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .flash {
+    font-size: 48px;
+    font-weight: bold;
+    animation: flash 1s linear infinite;
+    opacity: 0;
+  }
+  
+  @keyframes flash {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .flash:nth-child(2n) {
+    animation-delay: 0.5s;
+  }
+  
+  .flash:nth-child(3n) {
+    animation-delay: 1s;
+  }
+  
+  .flash:nth-child(4n) {
+    animation-delay: 1.5s;
+  }
+  
+  .flash:nth-child(5n) {
+    animation-delay: 2s;
+  }
+  
+  .flash:nth-child(6n) {
+    animation-delay: 2.5s;
+  }
+  
